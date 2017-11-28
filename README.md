@@ -41,6 +41,28 @@ If you want to use latest chrome, run chrome/buildChrome.sh on EC2 having at lea
 See also [serverless-chrome](https://github.com/adieuadieu/serverless-chrome/blob/master/chrome/README.md).
 Once you build it, link to `headless_shell.tar.gz` in `chrome` dir.
 
+## Deploying to AWS
+The best way to deploy right now is to upload package.zip file to S3 and set the link to Lambda.
+
+Testing in Lambda:
+
+- Normal request
+```
+{
+  "url": "https://google.com",
+  "trackResponses": false,
+  "getCookies": false,
+}
+```
+- Request with XHR responses and cookies (shopee.vn is SPA written in React)
+```
+{
+  "url": "https://shopee.vn/Astaxanthin-i.25321200.413097508",
+  "trackResponses": true,
+  "getCookies": true,
+}
+```
+
 ## Article
 
 [Lambda上でPuppeteer/Headless Chromeを動かすStarter Kitを作った - sambaiz-net](https://www.sambaiz.net/article/132/)
