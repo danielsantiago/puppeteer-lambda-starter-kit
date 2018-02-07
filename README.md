@@ -1,6 +1,6 @@
 # Puppeteer Lambda Starter Kit
 
-Starter Kit for running Headless-Chrome by [Puppeteer](https://github.com/GoogleChrome/puppeteer) on AWS Lambda.
+Starter Kit for running Headless-Chrome by [Puppeteer v1.0.0](https://github.com/GoogleChrome/puppeteer) on AWS Lambda.
 
 ```
 $ git clone -o starter-kit https://github.com/sambaiz/puppeteer-lambda-starter-kit.git your_project_name
